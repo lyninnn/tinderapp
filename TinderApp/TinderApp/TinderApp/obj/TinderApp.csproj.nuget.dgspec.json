@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\turis\\Desktop\\TinderApp\\TinderApp\\TinderApp\\TinderApp.csproj": {}
+    "C:\\Users\\turis\\Desktop\\tinderapp\\TinderApp\\TinderApp\\TinderApp\\TinderApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\turis\\Desktop\\TinderApp\\TinderApp\\TinderApp\\TinderApp.csproj": {
+    "C:\\Users\\turis\\Desktop\\tinderapp\\TinderApp\\TinderApp\\TinderApp\\TinderApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\turis\\Desktop\\TinderApp\\TinderApp\\TinderApp\\TinderApp.csproj",
+        "projectUniqueName": "C:\\Users\\turis\\Desktop\\tinderapp\\TinderApp\\TinderApp\\TinderApp\\TinderApp.csproj",
         "projectName": "TinderApp",
-        "projectPath": "C:\\Users\\turis\\Desktop\\TinderApp\\TinderApp\\TinderApp\\TinderApp.csproj",
+        "projectPath": "C:\\Users\\turis\\Desktop\\tinderapp\\TinderApp\\TinderApp\\TinderApp\\TinderApp.csproj",
         "packagesPath": "C:\\Users\\turis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\turis\\Desktop\\TinderApp\\TinderApp\\TinderApp\\obj\\",
+        "outputPath": "C:\\Users\\turis\\Desktop\\tinderapp\\TinderApp\\TinderApp\\TinderApp\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

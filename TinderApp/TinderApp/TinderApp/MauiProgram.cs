@@ -1,4 +1,4 @@
-﻿using Android.Mtp;
+﻿
 using Microsoft.Extensions.Logging;
 using TinderApp.Model;
 using TinderApp.Views;

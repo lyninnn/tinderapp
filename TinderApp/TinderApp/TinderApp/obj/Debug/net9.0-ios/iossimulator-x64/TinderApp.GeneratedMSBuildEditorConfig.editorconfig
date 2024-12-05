@@ -13,43 +13,43 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TinderApp
-build_property.ProjectDir = C:\Users\turis\Desktop\TinderApp\TinderApp\TinderApp\
+build_property.ProjectDir = C:\Users\turis\Desktop\tinderapp\TinderApp\TinderApp\TinderApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/turis/Desktop/TinderApp/TinderApp/TinderApp/App.xaml]
+[C:/Users/turis/Desktop/tinderapp/TinderApp/TinderApp/TinderApp/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = TinderApp.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/turis/Desktop/TinderApp/TinderApp/TinderApp/AppShell.xaml]
+[C:/Users/turis/Desktop/tinderapp/TinderApp/TinderApp/TinderApp/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = TinderApp.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/Users/turis/Desktop/TinderApp/TinderApp/TinderApp/MainPage.xaml]
+[C:/Users/turis/Desktop/tinderapp/TinderApp/TinderApp/TinderApp/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = TinderApp.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[C:/Users/turis/Desktop/TinderApp/TinderApp/TinderApp/Resources/Styles/Colors.xaml]
+[C:/Users/turis/Desktop/tinderapp/TinderApp/TinderApp/TinderApp/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = TinderApp.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/turis/Desktop/TinderApp/TinderApp/TinderApp/Resources/Styles/Styles.xaml]
+[C:/Users/turis/Desktop/tinderapp/TinderApp/TinderApp/TinderApp/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = TinderApp.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[C:/Users/turis/Desktop/TinderApp/TinderApp/TinderApp/Views/UsuarioPage.xaml]
+[C:/Users/turis/Desktop/tinderapp/TinderApp/TinderApp/TinderApp/Views/UsuarioPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = TinderApp.Views.UsuarioPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\UsuarioPage.xaml
