@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Logging;
 using TinderApp.Model;
 using TinderApp.Views;
+using TinderApp.ViewModel;
 
 namespace TinderApp
 {
