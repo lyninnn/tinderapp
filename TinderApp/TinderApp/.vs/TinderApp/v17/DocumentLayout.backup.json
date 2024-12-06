@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\turis\\Desktop\\tinderapp\\TinderApp\\TinderApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{27416C4D-21A6-4A94-A537-4ACB3D681D49}|TinderApp\\TinderApp.csproj|c:\\users\\turis\\desktop\\tinderapp\\tinderapp\\tinderapp\\tinderapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27416C4D-21A6-4A94-A537-4ACB3D681D49}|TinderApp\\TinderApp.csproj|solutionrelative:tinderapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27416C4D-21A6-4A94-A537-4ACB3D681D49}|TinderApp\\TinderApp.csproj|c:\\users\\turis\\desktop\\tinderapp\\tinderapp\\tinderapp\\tinderapp\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27416C4D-21A6-4A94-A537-4ACB3D681D49}|TinderApp\\TinderApp.csproj|solutionrelative:tinderapp\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{27416C4D-21A6-4A94-A537-4ACB3D681D49}|TinderApp\\TinderApp.csproj|c:\\users\\turis\\desktop\\tinderapp\\tinderapp\\tinderapp\\tinderapp\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{27416C4D-21A6-4A94-A537-4ACB3D681D49}|TinderApp\\TinderApp.csproj|solutionrelative:tinderapp\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27416C4D-21A6-4A94-A537-4ACB3D681D49}|TinderApp\\TinderApp.csproj|c:\\users\\turis\\desktop\\tinderapp\\tinderapp\\tinderapp\\tinderapp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27416C4D-21A6-4A94-A537-4ACB3D681D49}|TinderApp\\TinderApp.csproj|solutionrelative:tinderapp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{27416C4D-21A6-4A94-A537-4ACB3D681D49}|TinderApp\\TinderApp.csproj|c:\\users\\turis\\desktop\\tinderapp\\tinderapp\\tinderapp\\tinderapp\\views\\usuariopage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -13,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{27416C4D-21A6-4A94-A537-4ACB3D681D49}|TinderApp\\TinderApp.csproj|c:\\users\\turis\\desktop\\tinderapp\\tinderapp\\tinderapp\\tinderapp\\views\\usuariopage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27416C4D-21A6-4A94-A537-4ACB3D681D49}|TinderApp\\TinderApp.csproj|solutionrelative:tinderapp\\views\\usuariopage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27416C4D-21A6-4A94-A537-4ACB3D681D49}|TinderApp\\TinderApp.csproj|c:\\users\\turis\\desktop\\tinderapp\\tinderapp\\tinderapp\\tinderapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27416C4D-21A6-4A94-A537-4ACB3D681D49}|TinderApp\\TinderApp.csproj|solutionrelative:tinderapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{27416C4D-21A6-4A94-A537-4ACB3D681D49}|TinderApp\\TinderApp.csproj|c:\\users\\turis\\desktop\\tinderapp\\tinderapp\\tinderapp\\tinderapp\\viewmodel\\usuarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,14 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{27416C4D-21A6-4A94-A537-4ACB3D681D49}|TinderApp\\TinderApp.csproj|c:\\users\\turis\\desktop\\tinderapp\\tinderapp\\tinderapp\\tinderapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27416C4D-21A6-4A94-A537-4ACB3D681D49}|TinderApp\\TinderApp.csproj|solutionrelative:tinderapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27416C4D-21A6-4A94-A537-4ACB3D681D49}|TinderApp\\TinderApp.csproj|c:\\users\\turis\\desktop\\tinderapp\\tinderapp\\tinderapp\\tinderapp\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27416C4D-21A6-4A94-A537-4ACB3D681D49}|TinderApp\\TinderApp.csproj|solutionrelative:tinderapp\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27416C4D-21A6-4A94-A537-4ACB3D681D49}|TinderApp\\TinderApp.csproj|c:\\users\\turis\\desktop\\tinderapp\\tinderapp\\tinderapp\\tinderapp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27416C4D-21A6-4A94-A537-4ACB3D681D49}|TinderApp\\TinderApp.csproj|solutionrelative:tinderapp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{27416C4D-21A6-4A94-A537-4ACB3D681D49}|TinderApp\\TinderApp.csproj|c:\\users\\turis\\desktop\\tinderapp\\tinderapp\\tinderapp\\tinderapp\\tinderapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -73,7 +73,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 384,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -117,20 +117,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\Users\\turis\\Desktop\\tinderapp\\TinderApp\\TinderApp\\TinderApp\\MainPage.xaml",
               "RelativeDocumentMoniker": "TinderApp\\MainPage.xaml",
               "ToolTip": "C:\\Users\\turis\\Desktop\\tinderapp\\TinderApp\\TinderApp\\TinderApp\\MainPage.xaml",
               "RelativeToolTip": "TinderApp\\MainPage.xaml",
-              "ViewState": "AgIAAAwAAAAAAAAAAADgvxoAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-12-06T14:37:58.989Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "UsuarioPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\turis\\Desktop\\tinderapp\\TinderApp\\TinderApp\\TinderApp\\Views\\UsuarioPage.xaml.cs",
               "RelativeDocumentMoniker": "TinderApp\\Views\\UsuarioPage.xaml.cs",
@@ -138,25 +138,24 @@
               "RelativeToolTip": "TinderApp\\Views\\UsuarioPage.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T17:05:09.01Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-05T17:05:09.01Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "MauiProgram.cs",
               "DocumentMoniker": "C:\\Users\\turis\\Desktop\\tinderapp\\TinderApp\\TinderApp\\TinderApp\\MauiProgram.cs",
               "RelativeDocumentMoniker": "TinderApp\\MauiProgram.cs",
               "ToolTip": "C:\\Users\\turis\\Desktop\\tinderapp\\TinderApp\\TinderApp\\TinderApp\\MauiProgram.cs",
               "RelativeToolTip": "TinderApp\\MauiProgram.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAAAQAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAAAQAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-05T17:28:27.088Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "AppShell.xaml.cs",
               "DocumentMoniker": "C:\\Users\\turis\\Desktop\\tinderapp\\TinderApp\\TinderApp\\TinderApp\\AppShell.xaml.cs",
               "RelativeDocumentMoniker": "TinderApp\\AppShell.xaml.cs",
@@ -164,11 +163,12 @@
               "RelativeToolTip": "TinderApp\\AppShell.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T17:27:43.763Z"
+              "WhenOpened": "2024-12-05T17:27:43.763Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "MainViewModel.cs",
               "DocumentMoniker": "C:\\Users\\turis\\Desktop\\tinderapp\\TinderApp\\TinderApp\\TinderApp\\ViewModel\\MainViewModel.cs",
               "RelativeDocumentMoniker": "TinderApp\\ViewModel\\MainViewModel.cs",
@@ -180,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\turis\\Desktop\\tinderapp\\TinderApp\\TinderApp\\TinderApp\\App.xaml.cs",
               "RelativeDocumentMoniker": "TinderApp\\App.xaml.cs",
@@ -192,7 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\turis\\Desktop\\tinderapp\\TinderApp\\TinderApp\\TinderApp\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "TinderApp\\MainPage.xaml.cs",
@@ -200,11 +200,12 @@
               "RelativeToolTip": "TinderApp\\MainPage.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T17:27:50.825Z"
+              "WhenOpened": "2024-12-05T17:27:50.825Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "UsuarioPage.xaml",
               "DocumentMoniker": "C:\\Users\\turis\\Desktop\\tinderapp\\TinderApp\\TinderApp\\TinderApp\\Views\\UsuarioPage.xaml",
               "RelativeDocumentMoniker": "TinderApp\\Views\\UsuarioPage.xaml",
@@ -212,12 +213,11 @@
               "RelativeToolTip": "TinderApp\\Views\\UsuarioPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-12-05T17:04:49.6Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-05T17:04:49.6Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "UsuarioViewModel.cs",
               "DocumentMoniker": "C:\\Users\\turis\\Desktop\\tinderapp\\TinderApp\\TinderApp\\TinderApp\\ViewModel\\UsuarioViewModel.cs",
               "RelativeDocumentMoniker": "TinderApp\\ViewModel\\UsuarioViewModel.cs",
