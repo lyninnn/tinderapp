@@ -28,14 +28,14 @@ namespace TinderApp.ViewModel
             _database = new TinderDB();
 
             // Cargar matchs al inicio
-            CargarMatchs();
+            _ = CargarMatchs();
 
             // Comandos
             AgregarMatchCommand = new Command(AgregarMatch);
             EliminarMatchCommand = new Command<int>(EliminarMatch);
         }
 
-        private async void CargarMatchs()
+        private async Task CargarMatchs()
         {
             Matchs.Clear();
             var matchs = await _database.VerMatch();
