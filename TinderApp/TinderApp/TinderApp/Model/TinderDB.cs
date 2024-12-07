@@ -140,25 +140,23 @@ namespace TinderApp.Model
 
         /* MATCHS */
 
-        public async Task<int> InsertarMatch(Usuario usuario, Usuario usuario2)
+        public async Task<int> InsertarMatch(Match match)
         {
             int row;
             using (var connection = new SqliteConnection(cadenaConexion))
             {
-                string fecha = DateTime.Now.ToString();
                 await connection.OpenAsync();
                 var insertCommand = connection.CreateCommand();
                 insertCommand.CommandText = @"INSERT INTO Match (user1_id, user2_id, fecha_match) values (@id1, @id2, @fecha)";
-                insertCommand.Parameters.AddWithValue("@id1", usuario.UsuarioId);
-                insertCommand.Parameters.AddWithValue("@id2", usuario2.UsuarioId);
-                insertCommand.Parameters.AddWithValue("@fecha", fecha);
+                insertCommand.Parameters.AddWithValue("@id1", match.Usuario1Id);
+                insertCommand.Parameters.AddWithValue("@id2", match.Usuario2Id);
+                insertCommand.Parameters.AddWithValue("@fecha", match.FechaMatch.ToString("yyyy-MM-dd HH:mm:ss"));
                 row = await insertCommand.ExecuteNonQueryAsync();
-
             }
 
             return row;
-
         }
+
 
         public async Task ActualizarMatch(Match match)
         {
