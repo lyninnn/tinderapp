@@ -16,6 +16,8 @@ namespace TinderApp.Model
         public string? Ubicacion { get; set; }
         public string? Preferencias { get; set; }
         public string Foto {  get; set; }
+       
+        private string contraseña { get; set; }
 
 
     }

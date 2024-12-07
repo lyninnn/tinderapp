@@ -30,5 +30,7 @@ namespace TinderApp.DTOs
         [ObservableProperty]
         private string foto;
 
+        [ObservableProperty]
+        private string contraseña;
     }
 }
