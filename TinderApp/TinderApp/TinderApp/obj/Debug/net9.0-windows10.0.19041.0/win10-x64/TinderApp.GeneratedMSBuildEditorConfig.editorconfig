@@ -53,6 +53,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = TinderApp.Resources.Styles
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+[C:/Users/turis/Desktop/tinderapp/TinderApp/TinderApp/TinderApp/Views/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TinderApp.Views.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\LoginPage.xaml
+
 [C:/Users/turis/Desktop/tinderapp/TinderApp/TinderApp/TinderApp/Views/MatchPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = TinderApp.Views.MatchPage.xaml

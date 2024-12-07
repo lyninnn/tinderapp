@@ -53,12 +53,13 @@ namespace TinderApp.Model
 
                 await connection.OpenAsync();
                 var insertCommand = connection.CreateCommand();
-                insertCommand.CommandText = @"INSERT INTO Usuario (nombre, edad, genero, ubicacion, preferencias) values (@nombre, @edad, @genero, @ubicacion, @preferencias)";
+                insertCommand.CommandText = @"INSERT INTO Usuario (nombre, edad, genero, ubicacion, preferencias,foto) values (@nombre, @edad, @genero, @ubicacion, @preferencias,@foto)";
                 insertCommand.Parameters.AddWithValue("@nombre", usuario.Nombre);
                 insertCommand.Parameters.AddWithValue("@edad", usuario.Edad);
                 insertCommand.Parameters.AddWithValue("@genero", usuario.Genero);
                 insertCommand.Parameters.AddWithValue("@ubicacion", usuario.Ubicacion);
                 insertCommand.Parameters.AddWithValue("@preferencias", usuario.Preferencias);
+                insertCommand.Parameters.AddWithValue("@foto", usuario.Foto);
                 row = await insertCommand.ExecuteNonQueryAsync();
 
             }
@@ -75,12 +76,13 @@ namespace TinderApp.Model
 
                 await connection.OpenAsync();
                 var updateCommand = connection.CreateCommand();
-                updateCommand.CommandText = @"UPDATE Usuario SET nombre = @NOMBRE, edad = @edad, genero = @genero, ubicacion = @ubicacion, preferencias = @preferencias where id = @id)";
+                updateCommand.CommandText = @"UPDATE Usuario SET nombre = @NOMBRE, edad = @edad, genero = @genero, ubicacion = @ubicacion, preferencias = @preferencias,foto = @foto where id = @id)";
                 updateCommand.Parameters.AddWithValue("@nombre", usuario.Nombre);
                 updateCommand.Parameters.AddWithValue("@edad", usuario.Edad);
                 updateCommand.Parameters.AddWithValue("@genero", usuario.Genero);
                 updateCommand.Parameters.AddWithValue("@ubicacion", usuario.Ubicacion);
                 updateCommand.Parameters.AddWithValue("@preferencias", usuario.Preferencias);
+                updateCommand.Parameters.AddWithValue("@foto", usuario.Foto);
                 updateCommand.Parameters.AddWithValue("@id", usuario.UsuarioId);
                 await updateCommand.ExecuteNonQueryAsync();
 
@@ -129,7 +131,8 @@ namespace TinderApp.Model
                             Edad = reader.GetInt32(2),
                             Genero = reader.GetString(3),
                             Ubicacion = reader.GetString(4),
-                            Preferencias = reader.GetString(5)
+                            Preferencias = reader.GetString(5),
+                            Foto = reader.GetString(6)
 
                         });
                     }
