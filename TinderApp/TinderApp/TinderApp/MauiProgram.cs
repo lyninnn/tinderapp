@@ -33,7 +33,7 @@ namespace TinderApp
             builder.Services.AddTransient<LoginViewModel>();
             builder.Services.AddTransient<UsuarioPage>();
             builder.Services.AddTransient<UsuarioViewModel>();
-            builder.Services.AddTransient<MatchesPage>();
+            builder.Services.AddTransient<MatchPage>();
             builder.Services.AddTransient<MatchesViewModel>();
 
 
@@ -42,7 +42,7 @@ namespace TinderApp
             // MainPage no es una nueva, ya que es la principal de la app (por eso no se añade).
             Routing.RegisterRoute(nameof(LoginPage), typeof(LoginPage));
             Routing.RegisterRoute(nameof(UsuarioPage), typeof(UsuarioPage));
-            Routing.RegisterRoute(nameof(MatchesPage), typeof(MatchesPage));
+            Routing.RegisterRoute(nameof(MatchPage), typeof(MatchPage));
 #endif
 
             return builder.Build();

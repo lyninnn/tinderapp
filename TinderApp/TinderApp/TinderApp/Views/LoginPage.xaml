@@ -5,7 +5,7 @@
              Title="Login">
 
     <ContentPage.BindingContext>
-        <vm:LoginViewModel />
+        <vm:LoginViewModel/>
     </ContentPage.BindingContext>
 
     <VerticalStackLayout Padding="20">

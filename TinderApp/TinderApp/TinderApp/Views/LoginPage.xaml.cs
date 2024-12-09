@@ -7,10 +7,10 @@ namespace TinderApp.Views
 {
     public partial class LoginPage : ContentPage
     {
-        public LoginPage(TinderDB db)
+        public LoginPage(LoginViewModel loginViewModel)
         {
             InitializeComponent();
-            BindingContext = new LoginViewModel(db);
+            BindingContext = loginViewModel;
         }
 
     }

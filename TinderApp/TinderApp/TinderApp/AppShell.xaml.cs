@@ -7,7 +7,7 @@ namespace TinderApp
         {
             InitializeComponent();
             Routing.RegisterRoute(nameof(UsuarioPage), typeof(UsuarioPage));
-            Routing.RegisterRoute(nameof(MatchesPage), typeof(MatchesPage));
+            Routing.RegisterRoute(nameof(MatchPage), typeof(MatchPage));
         }
     }
 }
