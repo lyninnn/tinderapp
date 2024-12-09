@@ -67,6 +67,28 @@ namespace TinderApp.Model
             return row;
 
         }
+        public async Task<bool> VerificarCredencial(string nombre, string contraseña)
+        {
+            bool esValido = false;
+
+            using (var connection = new SqliteConnection(cadenaConexion))
+            {
+                await connection.OpenAsync();
+
+                var command = connection.CreateCommand();
+                command.CommandText = @"
+                SELECT COUNT(*) 
+                FROM usuarios 
+                WHERE nombre = @nombre AND contraseña = @contraseña;";
+                command.Parameters.AddWithValue("@nombre", nombre);
+                command.Parameters.AddWithValue("@contraseña", contraseña);
+
+                var result = (long)await command.ExecuteScalarAsync();
+                esValido = result > 0; // Si hay al menos una coincidencia, las credenciales son válidas
+            }
+
+            return esValido;
+        }
 
         public async Task ActualizarUsuario(Usuario usuario)
         {

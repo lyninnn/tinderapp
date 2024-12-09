@@ -1,29 +1,22 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:TinderApp.ViewModel"
-             x:Class="TinderApp.Views.MatchPage"
-             Title="Matchs">
+             x:Class="TinderApp.Views.MatchesPage"
+             Title="Matches">
+
     <ContentPage.BindingContext>
-        <vm:MatchsViewModel />
+        <vm:MatchViewModel />
     </ContentPage.BindingContext>
 
-    <VerticalStackLayout Padding="20">
-        <ListView ItemsSource="{Binding Matchs}" SelectedItem="{Binding NuevoMatch}">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <StackLayout Orientation="Horizontal" Padding="10">
-                            <Label Text="{Binding Usuario1Id}" FontSize="20" />
-                            <Label Text="  &amp; " FontSize="16" />
-                            <Label Text="{Binding Usuario2Id}" FontSize="20" />
-                            <Label Text="{Binding FechaMatch, StringFormat='Fecha: {0:dd/MM/yyyy}'}" FontSize="16" />
-                        </StackLayout>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-
-        <Button Text="Agregar Match" Command="{Binding AgregarMatchCommand}" />
-        <Button Text="Eliminar Match" Command="{Binding EliminarMatchCommand}" />
-    </VerticalStackLayout>
+    <CollectionView ItemsSource="{Binding Matches}">
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <VerticalStackLayout>
+                    <Image Source="{Binding Foto}" HeightRequest="100" />
+                    <Label Text="{Binding Nombre}" FontAttributes="Bold" />
+                    <Label Text="{Binding Edad}" />
+                </VerticalStackLayout>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
 </ContentPage>

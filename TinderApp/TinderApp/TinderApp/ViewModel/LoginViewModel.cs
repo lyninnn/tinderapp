@@ -1,40 +1,62 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
-using System.Windows.Input;
+using CommunityToolkit.Mvvm.Input;
 using TinderApp.Model;
+using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using Microsoft.Maui.Storage;
 
-namespace TinderApp.ViewModel
+public partial class LoginViewModel : ObservableObject
 {
-    public partial class LoginViewModel : ObservableObject
+    private readonly TinderDB database;
+
+    [ObservableProperty]
+    private string nombre;
+
+    [ObservableProperty]
+    private int edad;
+
+    [ObservableProperty]
+    private string genero;
+
+    [ObservableProperty]
+    private string ubicacion;
+
+    [ObservableProperty]
+    private string preferencias;
+
+    [ObservableProperty]
+    private string foto;
+
+    [ObservableProperty]
+    private string contraseña;
+
+
+    public LoginViewModel(TinderDB db)
     {
-        [ObservableProperty]
-        private string _nombre;
+        database = db;
+    }
 
-        [ObservableProperty]
-        private TinderDB tinderdb;
-
-        [ObservableProperty]
-        private int _edad;
-
-        [ObservableProperty]
-        private string _errorMessage;
-
-        public ICommand LoginCommand { get; }
-
-        public LoginViewModel()
+    [RelayCommand]
+    public async Task IniciarSesion()
+    {
+        if (await database.VerificarCredencial(Nombre, Contraseña))
         {
-            LoginCommand = new Command(OnLogin);
+            //await Shell.Current.DisplayAlert("Éxito", "Todo bien!", "OK");
+            await Shell.Current.GoToAsync("//UsuariosPage");
+            // Redirige al usuario a otra página o realiza la acción correspondiente
         }
-
-        private async void OnLogin()
+        else
         {
-            if (_edad < 18)
-            {
-                _errorMessage = "Debes ser mayor de 18 años para registrarte.";
-                return;
-            }
+            await Shell.Current.DisplayAlert("Error", "usuario no encontrado!", "OK");
+        }
+    }
 
-
-            tinderdb.InsertarUsuario();
+    [RelayCommand]
+    public async Task RegistrarUsuarioAsync()
+    {
+       
+        try
+            { 
             var usuario = new Usuario
             {
                 Nombre = Nombre,
@@ -45,10 +67,12 @@ namespace TinderApp.ViewModel
                 Foto = Foto
             };
 
-            // Lógica de inicio de sesión (puedes agregar validaciones adicionales aquí)
-
-            // Si el login es exitoso, navegar a la página principal
-            await Shell.Current.GoToAsync("//MainPage");
+            await database.InsertarUsuario(usuario);
+            await Shell.Current.DisplayAlert("Éxito", "Todo bien!", "OK");
+        }
+        catch
+        {
+            await Shell.Current.DisplayAlert("Erro", "Quiza ya existe", "OK");
         }
     }
 }
