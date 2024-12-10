@@ -2,7 +2,7 @@
 using TinderApp.Model;
 using TinderApp.DTOs;
 
-public partial class MatchesViewModel : ObservableObject
+public partial class MatchViewModel : ObservableObject
 {
     private readonly TinderDB _database;
 
@@ -12,7 +12,7 @@ public partial class MatchesViewModel : ObservableObject
     [ObservableProperty]
     private UsuariosDTO usuarioActual;
 
-    public MatchesViewModel(TinderDB database, UsuariosDTO usuario)
+    public MatchViewModel(TinderDB database, UsuariosDTO usuario)
     {
         _database = database;
         UsuarioActual = usuario;

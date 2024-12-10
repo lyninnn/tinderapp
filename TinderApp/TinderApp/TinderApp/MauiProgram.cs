@@ -34,7 +34,7 @@ namespace TinderApp
             builder.Services.AddTransient<UsuarioPage>();
             builder.Services.AddTransient<UsuarioViewModel>();
             builder.Services.AddTransient<MatchPage>();
-            builder.Services.AddTransient<MatchesViewModel>();
+            builder.Services.AddTransient<MatchViewModel>();
 
 
 

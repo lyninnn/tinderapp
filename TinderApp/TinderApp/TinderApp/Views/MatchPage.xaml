@@ -4,9 +4,6 @@
              x:Class="TinderApp.Views.MatchPage"
              Title="Matches">
 
-    <ContentPage.BindingContext>
-        <vm:MatchViewModel/>
-    </ContentPage.BindingContext>
 
     <CollectionView ItemsSource="{Binding Matches}">
         <CollectionView.ItemTemplate>

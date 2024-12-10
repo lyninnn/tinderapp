@@ -31,7 +31,7 @@ namespace TinderApp.Model
             }
             else if (DeviceInfo.Platform == DevicePlatform.WinUI)
             {
-                dbpath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Tinder.db");
+                dbpath = "C:\\Users\\turis\\Desktop\\tinderapp\\TinderApp\\TinderApp\\TinderDB\\TinderAPP.db";
             }
             else
             {

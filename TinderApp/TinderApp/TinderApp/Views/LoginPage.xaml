@@ -4,10 +4,6 @@
              x:Class="TinderApp.Views.LoginPage"
              Title="Login">
 
-    <ContentPage.BindingContext>
-        <vm:LoginViewModel/>
-    </ContentPage.BindingContext>
-
     <VerticalStackLayout Padding="20">
         <Entry Placeholder="Nombre" Text="{Binding Nombre}" />
         <Entry Placeholder="Contraseña" Text="{Binding Contraseña}" IsPassword="True" />

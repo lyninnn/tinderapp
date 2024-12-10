@@ -1,9 +1,11 @@
-namespace TinderApp.Views;
 
+using TinderApp.ViewModel;
+namespace TinderApp.Views;
 public partial class MatchPage : ContentPage
 {
-	public MatchPage()
+	public MatchPage(MatchViewModel viewModel)
 	{
 		InitializeComponent();
+		BindingContext = viewModel;
 	}
 }

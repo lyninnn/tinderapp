@@ -3,12 +3,13 @@
     x:Class="TinderApp.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:TinderApp.Views"
+    xmlns:local="clr-namespace:TinderApp"
     Shell.FlyoutBehavior="Flyout"
     Title="TinderApp">
 
-    <ShellContent Title="Login" Route="LoginPage" ContentTemplate="{DataTemplate views:LoginPage}" />
-    <ShellContent Title="Usuarios" Route="UsuarioPage" ContentTemplate="{DataTemplate views:UsuarioPage}" />
-    <ShellContent Title="Matches" Route="MatchPage" ContentTemplate="{DataTemplate views:MatchPage}" />
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
 
 </Shell>
