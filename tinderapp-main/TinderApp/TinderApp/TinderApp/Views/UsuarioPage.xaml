@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:TinderApp.ViewModel"
+             xmlns:local="clr-namespace:TinderApp.Views"
+             x:Class="TinderApp.Views.UsuarioPage"
+             Title="Usuarios"
+             x:DataType="viewmodel:UsuarioViewModel">
+
+    <ContentPage.Content>
+        <VerticalStackLayout Padding="10">
+
+            <Label Text="Lista de Usuarios"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,10" />
+
+            <RefreshView Command="{Binding CargarUsuariosCommand}">
+                <CollectionView ItemsSource="{Binding UsuariosDTO}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Border Padding="10" Margin="5" BackgroundColor="#E8F0FE">
+                                <Grid ColumnDefinitions="Auto, *, Auto" RowDefinitions="Auto, Auto, Auto" Margin="5">
+                                    <!-- Foto del usuario -->
+                                    <Image Source="{Binding Foto}" WidthRequest="60" HeightRequest="60" Aspect="AspectFill" 
+                                           Grid.RowSpan="3" Margin="5" BackgroundColor="#ddd"/>
+
+                                    <!-- Nombre y Edad -->
+                                    <Label Text="{Binding Nombre}" FontSize="18" FontAttributes="Bold" Grid.Column="1" />
+                                    <Label Text="{Binding Edad}" FontSize="16" Grid.Column="2" HorizontalTextAlignment="End" />
+
+                                    <!-- Género -->
+                                    <Label Text="{Binding Genero}" FontSize="14" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" />
+
+                                    <!-- Ubicación -->
+                                    <Label Text="{Binding Ubicacion}" FontSize="14" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" />
+
+                                    <!-- Preferencias -->
+                                    <Label Text="{Binding Preferencias}" FontSize="14" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3"
+                                           LineBreakMode="TailTruncation" />
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </RefreshView>
+
+        </VerticalStackLayout>
+    </ContentPage.Content>
+</ContentPage>

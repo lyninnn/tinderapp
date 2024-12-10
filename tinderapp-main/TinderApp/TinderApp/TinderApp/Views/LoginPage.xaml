@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:TinderApp.ViewModel"
+             x:Class="TinderApp.Views.LoginPage"
+             Title="Iniciar Sesión"
+             x:DataType="viewmodel:LoginViewModel"
+             BackgroundColor="#F5F5F5">
+
+    <VerticalStackLayout Padding="30"
+                         Spacing="25"
+                         VerticalOptions="Center">
+
+        <!-- Título -->
+        <Label Text="Bienvenido a TinderApp"
+               FontSize="28"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               TextColor="#333" />
+
+        <!-- Campo Nombre de Usuario -->
+        <VerticalStackLayout>
+            <Label Text="Nombre de Usuario"
+                   FontSize="16"
+                   FontAttributes="Bold"
+                   TextColor="#555" />
+            <Entry Placeholder="Ingresa tu nombre"
+                   Text="{Binding Nombre}"
+                   FontSize="14"
+                   BackgroundColor="White"
+                   TextColor="#333"
+                   Margin="0,5,0,0" />
+        </VerticalStackLayout>
+
+        <!-- Campo Contraseña -->
+        <VerticalStackLayout>
+            <Label Text="Contraseña"
+                   FontSize="16"
+                   FontAttributes="Bold"
+                   TextColor="#555" />
+            <Entry Placeholder="Ingresa tu contraseña"
+                   Text="{Binding Contraseña}"
+                   IsPassword="True"
+                   FontSize="14"
+                   BackgroundColor="White"
+                   TextColor="#333"
+                   Margin="0,5,0,0" />
+        </VerticalStackLayout>
+
+        <!-- Botón Iniciar Sesión -->
+        <Button Text="Iniciar Sesión"
+                Command="{Binding LoginCommand}"
+                FontSize="16"
+                BackgroundColor="#4CAF50"
+                TextColor="White"
+                CornerRadius="8"
+                HeightRequest="50"
+                Margin="0,20,0,0" />
+
+        <!-- Botón Registrar -->
+        <Button Text="¿No tienes cuenta? Regístrate"
+                Command="{Binding RegistrarCommand}"
+                FontSize="14"
+                BackgroundColor="#2196F3"
+                TextColor="White"
+                CornerRadius="8"
+                HeightRequest="50" />
+
+    </VerticalStackLayout>
+
+</ContentPage>
