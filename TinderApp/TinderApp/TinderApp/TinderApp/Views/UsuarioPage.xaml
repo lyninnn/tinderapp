@@ -1,0 +1,83 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:TinderApp.ViewModel"
+             xmlns:model="clr-namespace:TinderApp.DTOs"
+             x:Class="TinderApp.Views.UsuarioPage"
+             Title="Usuarios"
+             x:DataType="viewmodel:UsuarioViewModel">
+
+    <Grid RowDefinitions="Auto, *" RowSpacing="15" Margin="15">
+        <!-- RefreshView para cargar la lista de usuarios -->
+        <RefreshView Command="{Binding CargarUsuariosCommand}">
+            <CollectionView ItemsSource="{Binding UsuariosDTO}">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout ItemSpacing="5" Orientation="Vertical"/>
+                </CollectionView.ItemsLayout>
+
+                <!-- Plantilla de cada usuario -->
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="model:UsuariosDTO">
+                        <Border Padding="10, 5" HorizontalOptions="FillAndExpand">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="5"/>
+                            </Border.StrokeShape>
+
+                            <Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto"
+                                  ColumnDefinitions="Auto, *">
+
+                                <!-- Foto del usuario -->
+                                <Label Grid.Row="0" Grid.Column="0" Text="Foto:" FontAttributes="Bold"/>
+                                <Image Grid.Row="0" Grid.Column="1" Source="{Binding Foto}" 
+                                       WidthRequest="60" HeightRequest="60" Aspect="AspectFill" />
+
+                                <!-- Nombre -->
+                                <Label Grid.Row="1" Grid.Column="0" Text="Nombre:" FontAttributes="Bold"/>
+                                <Label Grid.Row="1" Grid.Column="1" Text="{Binding Nombre}" />
+
+                                <!-- Edad -->
+                                <Label Grid.Row="2" Grid.Column="0" Text="Edad:" FontAttributes="Bold"/>
+                                <Label Grid.Row="2" Grid.Column="1" Text="{Binding Edad}" />
+
+                                <!-- Género -->
+                                <Label Grid.Row="3" Grid.Column="0" Text="Género:" FontAttributes="Bold"/>
+                                <Label Grid.Row="3" Grid.Column="1" Text="{Binding Genero}" />
+
+                                <!-- Ubicación -->
+                                <Label Grid.Row="4" Grid.Column="0" Text="Ubicación:" FontAttributes="Bold"/>
+                                <Label Grid.Row="4" Grid.Column="1" Text="{Binding Ubicacion}" />
+
+                                <!-- Botones de acciones -->
+                                <Grid Grid.Row="5" Grid.ColumnSpan="2" ColumnDefinitions="*, *, *" Padding="0, 10, 0, 0">
+                                    <!-- Dar Like -->
+                                    <Label Grid.Column="0" Text="Dar Like" HorizontalTextAlignment="Center">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding BindingContext.DarLikeAsyncCommand, Source={x:RelativeSource AncestorType={x:Type ContentPage}}}" 
+                                                                  CommandParameter="{Binding}" />
+                                        </Label.GestureRecognizers>
+                                    </Label>
+
+                                    <!-- Eliminar -->
+                                    <Label Grid.Column="1" Text="Eliminar" HorizontalTextAlignment="Center">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding BindingContext.EliminarCommand, Source={x:RelativeSource AncestorType={x:Type ContentPage}}}" 
+                                                                  CommandParameter="{Binding}" />
+                                        </Label.GestureRecognizers>
+                                    </Label>
+
+                                    <!-- Editar -->
+                                    <Label Grid.Column="2" Text="Editar" HorizontalTextAlignment="Center">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding BindingContext.EditarCommand, Source={x:RelativeSource AncestorType={x:Type ContentPage}}}" 
+                                                                  CommandParameter="{Binding}" />
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                </Grid>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </RefreshView>
+    </Grid>
+
+</ContentPage>
